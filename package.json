@@ -2,7 +2,7 @@
   "name": "po2json",
   "description": "Convert PO files to JSON",
   "version": "1.0.0-beta-3",
-  "homepage": "https://github.com/mikeedwards/po2json",
+  "homepage": "https://github.com/hainenber/po2json",
   "author": {
     "name": "Joshua I. Miller",
     "email": "unrtst@cpan.org"
@@ -37,28 +37,32 @@
     {
       "name": "Alex Petty",
       "email": "pettyalex@gmail.com"
+    },
+    {
+      "name": "Hai Do",
+      "email": "dotronghai96@gmail.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mikeedwards/po2json.git"
+    "url": "git://github.com/hainenber/po2json.git"
   },
   "bugs": {
-    "url": "https://github.com/mikeedwards/po2json/issues"
+    "url": "https://github.com/hainenber/po2json/issues"
   },
   "license": "LGPL-2.0-or-later",
   "bin": {
     "po2json": "bin/po2json"
   },
   "engines": {
-    "node": ">=10.0"
+    "node": ">=22.0",
+    "npm": ">=10"
   },
   "scripts": {
-    "test": "jest"
+    "test": "node --test"
   },
   "devDependencies": {
     "jed": "~1.1.1",
-    "jest": "^26.1.0",
     "messageformat": "^2.3.0"
   },
   "keywords": [
