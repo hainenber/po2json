@@ -55,7 +55,8 @@
     "po2json": "bin/po2json"
   },
   "engines": {
-    "node": ">=22.0"
+    "node": ">=22.0",
+    "npm": ">=10"
   },
   "scripts": {
     "test": "jest"
