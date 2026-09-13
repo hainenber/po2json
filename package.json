@@ -59,11 +59,10 @@
     "npm": ">=10"
   },
   "scripts": {
-    "test": "jest"
+    "test": "node --test"
   },
   "devDependencies": {
     "jed": "~1.1.1",
-    "jest": "^26.1.0",
     "messageformat": "^2.3.0"
   },
   "keywords": [
