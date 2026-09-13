@@ -1,8 +1,6 @@
 # po2json
 
-[![Build Status](https://secure.travis-ci.org/mikeedwards/po2json.png?branch=master)](http://travis-ci.org/mikeedwards/po2json)
-[![Dependency Status](https://david-dm.org/mikeedwards/po2json.png?theme=shields.io)](https://david-dm.org/mikeedwards/po2json)
-[![devDependency Status](https://david-dm.org/mikeedwards/po2json/dev-status.png?theme=shields.io)](https://david-dm.org/mikeedwards/po2json#info=devDependencies)
+[![CI](https://github.com/hainenber/po2json/actions/workflows/ci.yaml/badge.svg)](https://github.com/hainenber/po2json/actions/workflows/ci.yaml)
 
 Convert PO files to Javascript objects or JSON strings. The result is Jed-compatible.
 
