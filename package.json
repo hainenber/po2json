@@ -77,12 +77,12 @@
     "po"
   ],
   "dependencies": {
-    "commander": "^6.0.0",
+    "commander": "^15.0.0",
     "gettext-parser": "2.0.0",
     "gettext-to-messageformat": "0.3.1"
   },
   "peerDependencies": {
-    "commander": "^6.0.0",
+    "commander": "^15.0.0",
     "gettext-parser": "2.0.0",
     "gettext-to-messageformat": "0.3.1"
   },
