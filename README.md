@@ -79,9 +79,9 @@ and `jedold` refers to Jed formats below 1.1.0
 ## Examples
 
 ### Basic usage with PO data as a buffer/string
-```
-const po2json = require('po2json'),
-    fs = require('fs');
+```js
+const po2json = require('po2json');
+const fs = require('fs');
 fs.readFile('messages.po', function (err, buffer) {
   const jsonData = po2json.parse(buffer);
   // do something interesting ...
@@ -89,7 +89,7 @@ fs.readFile('messages.po', function (err, buffer) {
 ```
 
 ### Parse a PO file directly - Asynchronous Usage
-```
+```js
 const po2json = require('po2json');
 po2json.parseFile('messages.po', function (err, jsonData) {
     // do something interesting ...
@@ -97,7 +97,7 @@ po2json.parseFile('messages.po', function (err, jsonData) {
 ```
 
 ### Parse a PO file directly - Synchronous Usage
-```
+```js
 const po2json = require('po2json');
 const jsonData = '';
 try {
@@ -107,9 +107,9 @@ try {
 ```
 
 ### Parse a PO file to messageformat format
-```
-const po2json = require('po2json'),
-    MessageFormat = require('messageformat');
+```js
+const po2json = require('po2json');
+const MessageFormat = require('messageformat');
 
 po2json.parseFile('es.po', { format: 'mf' }, function (err, translations) {
     const pFunc = function (n) {
@@ -126,9 +126,9 @@ po2json.parseFile('es.po', { format: 'mf' }, function (err, translations) {
 ```
 
 ### Parse a PO file to messageformat format using the full format
-```
-const po2json = require('po2json'),
-    MessageFormat = require('messageformat');
+```js
+const po2json = require('po2json');
+const MessageFormat = require('messageformat');
 
 po2json.parseFile('messages.po', { format: 'mf', fullMF: true }, function (err, jsonData) {
     const mf = new MessageFormat(
@@ -139,9 +139,9 @@ po2json.parseFile('messages.po', { format: 'mf', fullMF: true }, function (err, 
 ```
 
 ### Parse a PO file to Jed >= 1.1.0 format
-```
-const po2json = require('po2json'),
-    Jed = require('jed');
+```js
+const po2json = require('po2json');
+const Jed = require('jed');
 po2json.parseFile('messages.po', { format: 'jed' }, function (err, jsonData) {
     const i18n = new Jed( jsonData );
 });
@@ -149,9 +149,9 @@ po2json.parseFile('messages.po', { format: 'jed' }, function (err, jsonData) {
 
 ### Parse a PO file to Jed < 1.1.0 format
 __If you are using an older version of Jed, be sure to specify this format specifically.__
-```
-const po2json = require('po2json'),
-    Jed = require('jed');
+```js
+const po2json = require('po2json');
+const Jed = require('jed');
 po2json.parseFile('messages.po', { format: 'jedold' }, function (err, jsonData) {
     const i18n = new Jed( jsonData );
 });
@@ -163,7 +163,7 @@ npm test
 ```
 
 ## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/gruntjs/grunt).
+In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [oxlint](https://github.com/gruntjs/grunt).
 
 ## License
 Copyright (c) 2012 Joshua I. Miller
