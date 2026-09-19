@@ -87,12 +87,12 @@
   "dependencies": {
     "commander": "^14.0.0",
     "gettext-parser": "2.0.0",
-    "gettext-to-messageformat": "0.3.1"
+    "gettext-to-messageformat": "0.4.0"
   },
   "peerDependencies": {
     "commander": "^14.0.0",
     "gettext-parser": "2.0.0",
-    "gettext-to-messageformat": "0.3.1"
+    "gettext-to-messageformat": "0.4.0"
   },
   "files": [
     "dist"
