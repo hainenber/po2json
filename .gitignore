@@ -3,3 +3,6 @@ npm-debug.log
 
 #IDEs
 .idea
+
+# Build artifacts
+dist/*

@@ -3,11 +3,17 @@
   "description": "Convert PO files to JSON",
   "version": "1.0.2",
   "homepage": "https://github.com/hainenber/po2json",
+  "type": "module",
   "author": {
     "name": "Joshua I. Miller",
     "email": "unrtst@cpan.org"
   },
-  "main": "index.js",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
   "contributors": [
     {
       "name": "Zach Carter",
@@ -53,7 +59,7 @@
   },
   "license": "LGPL-2.0-or-later",
   "bin": {
-    "po2json": "bin/po2json"
+    "po2json": "./dist/cli.cjs"
   },
   "engines": {
     "node": ">=22.0",
@@ -68,7 +74,8 @@
     "eslint": "^10.10.0",
     "globals": "^17.12.0",
     "jed": "^1.1.1",
-    "messageformat": "^2.3.0"
+    "messageformat": "^2.3.0",
+    "tsdown": "^0.23.0"
   },
   "keywords": [
     "i18n",
@@ -87,10 +94,6 @@
     "gettext-to-messageformat": "0.3.1"
   },
   "files": [
-    "bin/po2json",
-    "lib/parse.js",
-    "lib/parseFile.js",
-    "lib/parseFileSync.js",
-    "index.js"
+    "dist"
   ]
 }

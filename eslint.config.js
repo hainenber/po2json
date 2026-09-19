@@ -1,7 +1,7 @@
-const js = require("@eslint/js");
-const globals = require("globals");
+import js from "@eslint/js";
+import globals from "globals";
 
-module.exports = [
+export default [
   // 1. Global Ignores (Replaces the old .eslintignore file)
   {
     ignores: ["dist/", "build/", "node_modules/"]
@@ -10,7 +10,7 @@ module.exports = [
   // 2. Main Configuration
   {
     // Apply these settings to all JavaScript files
-    files: ["**/*.js", "**/*.cjs"],
+    files: ["**/*.js", "**/*.cjs", "**/*.mjs"],
     
     // Extend the official recommended rules
     ...js.configs.recommended,
