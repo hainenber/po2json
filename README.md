@@ -22,9 +22,14 @@ import po2json from 'po2json';
 ```sh
 po2json translation.po translation.json
 ```
-__If you are using Jed >= 1.1.0, be sure to specify that format specifically.__
+__If you are using Jed < 1.1.0, be sure to specify `jedold` specifically.__
 ```sh
-po2json translation.po translation.json -f jed1.x
+po2json translation.po translation.json --format jedold
+```
+
+__If you are using Jed >= 1.1.0, be sure to specify `jed` specifically.__
+```sh
+po2json translation.po translation.json --format jed
 ```
 
 ## Documentation

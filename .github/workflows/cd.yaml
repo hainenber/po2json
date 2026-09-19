@@ -19,5 +19,7 @@ jobs:
           node-version: '26'
       - name: Upgrade to npm version required for staged publishing (npm 11.15+)
         run: npm install -g npm@12.0.2
+      - name: Build
+        run: npm run build
       - name: Publish to registry
         run: npm stage publish --provenance
