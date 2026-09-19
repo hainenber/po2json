@@ -67,7 +67,8 @@
   },
   "scripts": {
     "test": "node --test",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build": "tsdown"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
