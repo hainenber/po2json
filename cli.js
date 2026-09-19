@@ -10,7 +10,7 @@ program
   .arguments('<input> <output>')
   .option('-p --pretty', 'pretty-print JSON')
   .option('-F --fuzzy', 'include fuzzy messages')
-  .option('-f --format [format]', 'output format [raw, jed, jedold, mf, jed1.x]', 'raw')
+  .option('-f --format [format]', 'output format [raw, jed, jedold, mf', 'raw')
   .option('-M --full-mf', 'return full messageformat output (instead of only translations)')
   .option('-d --domain [domain]', 'domain')
   .option('--fallback-to-msgid', 'use msgid if translation is missing (nplurals must match)')
