@@ -1,5 +1,9 @@
-module.exports = {
-  parse: require('./lib/parse'),
-  parseFile: require('./lib/parseFile'),
-  parseFileSync: require('./lib/parseFileSync')
+import parse from './lib/parse.js'
+import parseFile from './lib/parseFile.js'
+import parseFileSync from './lib/parseFileSync.js'
+
+export default {
+  parse,
+  parseFile,
+  parseFileSync,
 };

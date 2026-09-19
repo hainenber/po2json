@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-const po2json = require('../');
-const fs = require('fs');
-const version = require('../package.json').version;
-const { program } = require('commander');
+import po2json from './index.js';
+import fs from 'node:fs';
+import { version } from './package.json' with { type: 'json' };
+import { program } from 'commander';
 
 program
   .version(version)

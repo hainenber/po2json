@@ -11,16 +11,19 @@ the library up-to-date with current ES standard.
 Install the module with: `npm install po2json`
 
 ### As a library
-```
+```js
 const po2json = require('po2json');
+
+// ESM
+import po2json from 'po2json';
 ```
 
 ### As an executable
-```
+```sh
 po2json translation.po translation.json
 ```
 __If you are using Jed >= 1.1.0, be sure to specify that format specifically.__
-```
+```sh
 po2json translation.po translation.json -f jed1.x
 ```
 
